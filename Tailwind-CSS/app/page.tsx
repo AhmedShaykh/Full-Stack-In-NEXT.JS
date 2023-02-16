@@ -1,5 +1,5 @@
-"use client";
 import { FC } from 'react';
+import Button from './button';
 
 const Home: FC = () => {
     return (
@@ -8,6 +8,8 @@ const Home: FC = () => {
                 <h1 className='text-4xl font-semibold'>
                     Next.JS 13 With Tailwind CSS
                 </h1>
+
+                <Button btn="Click Me" />
             </div>
         </main>
     )
