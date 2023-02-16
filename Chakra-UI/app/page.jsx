@@ -1,13 +1,21 @@
 "use client";
-import styles from './page.module.css';
+import React from "react";
+import { Box, Heading } from "@chakra-ui/react";
 
 const Home = () => {
     return (
-        <main className={styles.main}>
-            <h1>
+        <Box
+            textAlign='center'
+            bg="black"
+            py="4"
+        >
+            <Heading
+                color="white"
+                fontWeight="bold"
+            >
                 Next.JS 13 With Chakra UI
-            </h1>
-        </main>
+            </Heading>
+        </Box>
     )
 };
 
