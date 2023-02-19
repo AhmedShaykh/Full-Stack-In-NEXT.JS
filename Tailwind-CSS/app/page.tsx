@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import Button from './button';
+import Image from './image';
 
 const Home: FC = () => {
     return (
@@ -10,6 +11,7 @@ const Home: FC = () => {
                 </h1>
 
                 <Button btn="Click Me" />
+                <Image />
             </div>
         </main>
     )
