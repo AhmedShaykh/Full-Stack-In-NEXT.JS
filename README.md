@@ -1,1 +1,1 @@
-# Learning JamStack
+# Learning JamStack!

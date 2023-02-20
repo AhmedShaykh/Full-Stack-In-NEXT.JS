@@ -1,20 +1,34 @@
 "use client";
 import React from "react";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+import { Heading } from '@chakra-ui/layout';
+import { useColorMode } from '@chakra-ui/color-mode';
+import {
+    MoonIcon,
+    SunIcon
+} from '@chakra-ui/icons';
+import { IconButton } from '@chakra-ui/button';
 
 const Home = () => {
+
+    const { colorMode, toggleColorMode } = useColorMode();
+
     return (
         <Box
             textAlign='center'
-            bg="black"
-            py="4"
+            py="8"
         >
             <Heading
-                color="white"
                 fontWeight="bold"
             >
                 Next.JS 13 With Chakra UI
             </Heading>
+
+            <Box>
+                <IconButton mt={10} aria-label="Toggle Mode" onClick={toggleColorMode}>
+                    {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+                </IconButton>
+            </Box>
         </Box>
     )
 };
