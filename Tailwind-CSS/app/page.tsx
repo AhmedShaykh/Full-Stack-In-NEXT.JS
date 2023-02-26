@@ -43,7 +43,7 @@ const Home: FC = () => {
                 )}
             </div>
 
-            <Button btn="Click Me" />
+            <Button btn="Go To Next Page" />
             <Image />
         </main>
     )
