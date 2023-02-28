@@ -21,7 +21,9 @@ const Navbar = () => {
                 </Link>
 
                 <ul className='hidden sm:flex text-xl'>
-                    <li className='p-4 cursor-pointer'>Home</li>
+                    <Link href="/">
+                        <li className='p-4 cursor-pointer'>Home</li>
+                    </Link>
                     <li className='p-4 cursor-pointer'>About</li>
                     <li className='p-4 cursor-pointer'>Service</li>
                     <li className='p-4 cursor-pointer'>Contact</li>
@@ -46,7 +48,9 @@ const Navbar = () => {
                     }
                 >
                     <ul className='text-xl text-white'>
-                        <li className='p-4 cursor-pointer'>Home</li>
+                        <Link href="/">
+                            <li className='p-4 cursor-pointer'>Home</li>
+                        </Link>
                         <li className='p-4 cursor-pointer'>About</li>
                         <li className='p-4 cursor-pointer'>Service</li>
                         <li className='p-4 cursor-pointer'>Contact</li>
