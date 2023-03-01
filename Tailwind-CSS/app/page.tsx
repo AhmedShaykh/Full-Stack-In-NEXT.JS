@@ -45,6 +45,18 @@ const Home: FC = () => {
 
             <Button btn="Go To Next Page" />
             <Image />
+
+            <div className="mt-8 flex justify-center">
+                <button className="m-4 p-4 rounded-2xl border-8 border-cyan-500 ring-2">
+                    Ring
+                </button>
+                <button
+                    className="m-4 p-4 rounded-full ring-4 
+                    ring-offset-8 ring-offset-black"
+                >
+                    Ring 2
+                </button>
+            </div>
         </main>
     )
 };
