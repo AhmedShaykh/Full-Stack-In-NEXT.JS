@@ -35,7 +35,7 @@ const Home: FC = () => {
                     </button>
                 ) : (
                     <button
-                        className="bg-gray-100 rounded-md border-purple-400 border-2 p-4 hover:bg-gray-300"
+                        className="bg-white rounded-md border-purple-400 border-2 p-4"
                         onClick={() => setTheme('dark')}
                     >
                         <BsFillSunFill />
