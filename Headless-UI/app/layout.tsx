@@ -1,4 +1,6 @@
+"use client";
 import './globals.css';
+import { ThemeProvider } from 'next-themes';
 
 export default function RootLayout({
   children,
@@ -8,9 +10,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
+      <ThemeProvider enableSystem={true} attribute="class">
         <body>
           {children}
         </body>
+      </ThemeProvider>
     </html>
   )
 };
