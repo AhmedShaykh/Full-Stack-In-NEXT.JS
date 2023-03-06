@@ -11,12 +11,20 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-html,
-body {
-  max-width: 100vw;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
+@layer components {
+  .quote {
+    @apply m-3 p-6 bg-blue-100 rounded-lg;
+  }
+
+  .quote p {
+    @apply font-serif italic text-lg text-gray-700 leading-snug mb-1;
+  }
+
+  .quote span {
+    @apply text-sm text-gray-500;
+  }
 }
