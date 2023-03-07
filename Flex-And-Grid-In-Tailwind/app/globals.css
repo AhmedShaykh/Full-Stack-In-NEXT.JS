@@ -17,6 +17,12 @@
   }
 }
 
+@layer utilities {
+  .basis-1\/2 {
+    flex-basis: 50%;
+  }
+}
+
 @layer components {
   .quote {
     @apply m-3 p-6 bg-blue-100 rounded-lg;
@@ -154,5 +160,37 @@
 
   ul li {
     @apply p-5 text-center cursor-pointer transition-all duration-200 border-b-2 border-white hover:border-green-400
+  }
+
+  .span {
+    @apply ml-4 py-2 px-5 bg-red-500 text-white text-sm rounded-full;
+  }
+
+  .profile {
+    @apply m-12;
+  }
+
+  .profile-img {
+    @apply w-20 h-20 object-cover rounded-full mr-4;
+  }
+
+  .profile h3 {
+    @apply font-bold text-xl;
+  }
+
+  .profile p {
+    @apply mt-1 leading-snug;
+  }
+
+  #learn {
+    @apply bg-orange-200;
+  }
+
+  #teach {
+    @apply bg-blue-200;
+  }
+
+  .split {
+    @apply flex justify-center items-center text-center;
   }
 }
