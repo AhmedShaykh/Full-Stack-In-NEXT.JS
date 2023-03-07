@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 const page: FC = () => {
     return (
-        <div className="flex">
+        <div className="flex bg-white py-20">
             <div className="quote">
                 <p>“The success combination in business is: Do what you do better... and: do more of what you do.”</p>
                 <span>- David J. Schwartz</span>
