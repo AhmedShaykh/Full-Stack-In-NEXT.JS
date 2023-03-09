@@ -28,9 +28,9 @@ const page: FC = () => {
 
             <div className="flex justify-center py-20 bg-slate-800">
                 <ul className="flex">
-                    <li className="flex-grow hover:flex-grow-[3]">Description</li>
-                    <li className="flex-grow hover:flex-grow-[3]">Care Instructions</li>
-                    <li className="flex-grow hover:flex-grow-[3]">Return Policy</li>
+                    <li className="flex-grow hover:flex-grow-[3] hover:border-green-700">Description</li>
+                    <li className="flex-grow hover:flex-grow-[3] hover:border-green-700">Care Instructions</li>
+                    <li className="flex-grow hover:flex-grow-[3] hover:border-green-700">Return Policy</li>
                 </ul>
             </div>
         </>
