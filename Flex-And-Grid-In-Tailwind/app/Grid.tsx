@@ -11,7 +11,7 @@ const Grid: FC = () => {
             <div className="flex justify-center">
                 <h2 className="text-white py-4 text-xl">
                     <Link href="/grid/chapter_1">
-                        1) Display Grid
+                        1) Display Grid & Grid Template Columns
                     </Link>
                 </h2>
             </div>
