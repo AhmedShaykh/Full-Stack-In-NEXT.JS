@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Flex from './flex';
+import Flex from './Flex';
 import Grid from './Grid';
 
 const Home: FC = () => {
