@@ -49,6 +49,16 @@ const Flex: FC = () => {
                         8) Flex Basis
                     </Link>
                 </h2>
+                <h2 className="text-white py-4 text-xl">
+                    <Link href="/flex/chapter_9">
+                        9) Flex Shorthand Property
+                    </Link>
+                </h2>
+                <h2 className="text-white py-4 text-xl">
+                    <Link href="/flex/chapter_10">
+                        10) Flex Basis
+                    </Link>
+                </h2>
             </div>
         </div>
     )
