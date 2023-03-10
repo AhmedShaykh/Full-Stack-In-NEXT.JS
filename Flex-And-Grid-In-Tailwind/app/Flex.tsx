@@ -51,12 +51,22 @@ const Flex: FC = () => {
                 </h2>
                 <h2 className="text-white py-4 text-xl">
                     <Link href="/flex/chapter_9">
-                        9) Flex Shorthand Property
+                        9) Flex Auto Margins
                     </Link>
                 </h2>
                 <h2 className="text-white py-4 text-xl">
                     <Link href="/flex/chapter_10">
-                        10) Flex Basis
+                        10) Flex Order
+                    </Link>
+                </h2>
+                <h2 className="text-white py-4 text-xl">
+                    <Link href="/flex/chapter_11">
+                        11) Flex Align Self
+                    </Link>
+                </h2>
+                <h2 className="text-white py-4 text-xl">
+                    <Link href="/flex/chapter_12">
+                        12) Flex Align Content
                     </Link>
                 </h2>
             </div>
