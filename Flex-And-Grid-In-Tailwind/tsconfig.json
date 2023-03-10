@@ -35,7 +35,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/head.tsx",
-    "app/page.jsx"
+    "app/page.jsx",
+    "app/grid/chapter_1/page.jsx"
   ],
   "exclude": [
     "node_modules"

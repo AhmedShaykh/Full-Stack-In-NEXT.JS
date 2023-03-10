@@ -11,7 +11,7 @@ const Flex: FC = () => {
             <div className="flex justify-center flex-col">
                 <h2 className="text-white py-4 text-xl">
                     <Link href="/flex/chapter_1">
-                        1) Display Flex
+                        1) Display Flex & Inline Flex
                     </Link>
                 </h2>
                 <h2 className="text-white py-4 text-xl">
