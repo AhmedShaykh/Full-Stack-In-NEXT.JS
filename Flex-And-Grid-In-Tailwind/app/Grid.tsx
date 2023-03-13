@@ -8,10 +8,30 @@ const Grid: FC = () => {
                 Grid System
             </h1>
 
-            <div className="flex justify-center">
+            <div className="flex justify-center flex-col">
                 <h2 className="text-white py-4 text-xl">
                     <Link href="/grid/chapter_1">
                         1) Display Grid & Grid Template Columns
+                    </Link>
+                </h2>
+                <h2 className="text-white py-4 text-xl">
+                    <Link href="/grid/chapter_2">
+                        2) Grid Template Rows
+                    </Link>
+                </h2>
+                <h2 className="text-white py-4 text-xl">
+                    <Link href="/grid/chapter_3">
+                        3) Grid Gap
+                    </Link>
+                </h2>
+                <h2 className="text-white py-4 text-xl">
+                    <Link href="/grid/chapter_4">
+                        4) Grid Justify Content
+                    </Link>
+                </h2>
+                <h2 className="text-white py-4 text-xl">
+                    <Link href="/grid/chapter_5">
+                        5) Grid Align Content
                     </Link>
                 </h2>
             </div>
