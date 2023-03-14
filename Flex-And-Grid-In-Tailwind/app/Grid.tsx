@@ -34,6 +34,21 @@ const Grid: FC = () => {
                         5) Grid Align Content
                     </Link>
                 </h2>
+                <h2 className="text-white py-4 text-xl">
+                    <Link href="/grid/chapter_6">
+                        6) Grid Justify Items
+                    </Link>
+                </h2>
+                <h2 className="text-white py-4 text-xl">
+                    <Link href="/grid/chapter_7">
+                        7) Grid Align Items
+                    </Link>
+                </h2>
+                <h2 className="text-white py-4 text-xl">
+                    <Link href="/grid/chapter_8">
+                        8) Grid Place Items
+                    </Link>
+                </h2>
             </div>
         </div>
     )
