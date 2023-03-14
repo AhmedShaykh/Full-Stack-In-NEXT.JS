@@ -7,7 +7,6 @@ const Grid: FC = () => {
             <h1 className='text-4xl font-semibold py-4'>
                 Grid System
             </h1>
-
             <div className="flex justify-center flex-col">
                 <h2 className="text-white py-4 text-xl">
                     <Link href="/grid/chapter_1">
@@ -47,6 +46,36 @@ const Grid: FC = () => {
                 <h2 className="text-white py-4 text-xl">
                     <Link href="/grid/chapter_8">
                         8) Grid Place Items
+                    </Link>
+                </h2>
+                <h2 className="text-white py-4 text-xl">
+                    <Link href="/grid/chapter_9">
+                        9) Grid Column Start, End & Span
+                    </Link>
+                </h2>
+                <h2 className="text-white py-4 text-xl">
+                    <Link href="/grid/chapter_10">
+                        10) Grid Row
+                    </Link>
+                </h2>
+                <h2 className="text-white py-4 text-xl">
+                    <Link href="/grid/chapter_11">
+                        11) Grid
+                    </Link>
+                </h2>
+                <h2 className="text-white py-4 text-xl">
+                    <Link href="/grid/chapter_12">
+                        12) Grid
+                    </Link>
+                </h2>
+                <h2 className="text-white py-4 text-xl">
+                    <Link href="/grid/chapter_13">
+                        13) Grid
+                    </Link>
+                </h2>
+                <h2 className="text-white py-4 text-xl">
+                    <Link href="/grid/chapter_14">
+                        14) Grid
                     </Link>
                 </h2>
             </div>
