@@ -60,22 +60,22 @@ const Grid: FC = () => {
                 </h2>
                 <h2 className="text-white py-4 text-xl">
                     <Link href="/grid/chapter_11">
-                        11) Grid
+                        11) Grid Order
                     </Link>
                 </h2>
                 <h2 className="text-white py-4 text-xl">
                     <Link href="/grid/chapter_12">
-                        12) Grid
+                        12) Advanced Grid Template Values
                     </Link>
                 </h2>
                 <h2 className="text-white py-4 text-xl">
                     <Link href="/grid/chapter_13">
-                        13) Grid
+                        13) Grid Auto Flow
                     </Link>
                 </h2>
                 <h2 className="text-white py-4 text-xl">
                     <Link href="/grid/chapter_14">
-                        14) Grid
+                        14) Grid Justify Self & Align Self
                     </Link>
                 </h2>
             </div>
