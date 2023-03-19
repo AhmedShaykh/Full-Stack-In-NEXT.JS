@@ -23,9 +23,21 @@ const page = () => {
             <div className="max-w-none w-auto min-h-screen grid grid-cols-[30rem,1fr]">
                 <div className="bg-pink-600 text-white p-10">
                     <h1 className="font-bold text-4xl">Sidebar</h1>
+                    <ol>
+                        <li className="h-1 my-10 bg-white bg-opacity-50"></li>
+                        <li className="h-1 my-10 bg-white bg-opacity-50"></li>
+                        <li className="h-1 my-10 bg-white bg-opacity-50"></li>
+                        <li className="h-1 my-10 bg-white bg-opacity-50"></li>
+                    </ol>
                 </div>
                 <div className="p-10">
                     <h1 className="font-bold text-4xl">Main Content</h1>
+                    <p className="h-1 my-10 bg-black bg-opacity-10"></p>
+                    <p className="h-1 my-10 bg-black bg-opacity-10"></p>
+                    <p className="h-1 my-10 bg-black bg-opacity-10"></p>
+                    <p className="h-1 my-10 bg-black bg-opacity-10"></p>
+                    <p className="h-1 my-10 bg-black bg-opacity-10"></p>
+                    <p className="h-1 my-10 bg-black bg-opacity-10"></p>
                 </div>
             </div>
 
