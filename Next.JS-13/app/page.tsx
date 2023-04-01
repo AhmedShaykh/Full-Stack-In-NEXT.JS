@@ -1,10 +1,9 @@
 import { FC } from 'react';
-import styles from './page.module.css';
 
 const Home: FC = () => {
     return (
-        <div className={styles.main}>
-            <h1>
+        <div className="text-center">
+            <h1 className="text-3xl py-3 font-semibold">
                 Learning Next.JS 13!
             </h1>
         </div>
