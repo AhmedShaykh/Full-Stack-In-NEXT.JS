@@ -8,11 +8,11 @@ interface Product {
     price: string;
     stocked: boolean;
     name: string;
-}
+};
 
-interface Props {
+export interface Props {
     products: Product[];
-}
+};
 
 const FilterableProductTable: FC<Props> = ({ products }) => {
 
@@ -22,8 +22,15 @@ const FilterableProductTable: FC<Props> = ({ products }) => {
 
     return (
         <div>
-            <SearchBar />
-            <ProductTable />
+            <SearchBar
+                filterText={filterText}
+                inStockOnly={inStockOnly}
+            />
+            <ProductTable
+                products={products}
+                filterText={filterText}
+                inStockOnly={inStockOnly}
+            />
         </div>
     )
 };

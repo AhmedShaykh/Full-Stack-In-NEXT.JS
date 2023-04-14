@@ -4,7 +4,7 @@ import FilterableProductTable from '../Components/FilterableProductTable';
 
 const page = () => {
     return (
-        <div className='my-4 flex justify-center space-x-2'>
+        <div className='my-4 flex justify-center'>
             <head>
                 <title>
                     React.JS 18!
