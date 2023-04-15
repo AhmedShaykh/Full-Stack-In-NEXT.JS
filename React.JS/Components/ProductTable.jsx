@@ -1,24 +1,12 @@
-import React, { FC } from 'react';
+import React from 'react';
 import ProductCategoryRow from './ProductCategoryRow';
 import ProductRow from './ProductRow';
 
-interface Product {
-    category: string;
-    price: string;
-    stocked: boolean;
-    name: string;
-};
-interface Props {
-    products: Product[];
-    filterText: string;
-    inStockOnly: boolean;
-};
-
-const ProductTable: FC<Props> = ({ products, filterText, inStockOnly }) => {
+const ProductTable = ({ products, filterText, inStockOnly }) => {
 
     const rows = [];
 
-    let lastCategory: null | string = null;
+    let lastCategory = null;
 
     products.forEach((product) => {
         if (
@@ -50,14 +38,14 @@ const ProductTable: FC<Props> = ({ products, filterText, inStockOnly }) => {
 
     return (
         <table>
-            <thead>
+            <thead className='space-x-4 my-4 text-2xl'>
                 <tr>
                     <th>Name</th>
                     <th>Price</th>
                 </tr>
             </thead>
             <tbody>
-                {/* {rows} */}
+                {rows}
             </tbody>
         </table>
     )

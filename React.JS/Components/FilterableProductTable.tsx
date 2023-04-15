@@ -20,11 +20,21 @@ const FilterableProductTable: FC<Props> = ({ products }) => {
 
     const [inStockOnly, setInStockOnly] = useState<boolean>(false);
 
+    const handleFilterTextChange = (value: string) => {
+        setFilterText(value);
+    };
+
+    const handleInStockOnlyChange = (value: boolean) => {
+        setInStockOnly(value);
+    };
+
     return (
         <div>
             <SearchBar
                 filterText={filterText}
                 inStockOnly={inStockOnly}
+                onFilterTextChange={handleFilterTextChange}
+                onInStockOnlyChange={handleInStockOnlyChange}
             />
             <ProductTable
                 products={products}

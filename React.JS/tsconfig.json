@@ -35,7 +35,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "Components/ProductRow.jsx",
-    "Components/ProductCategoryRow.jsx"
+    "Components/ProductCategoryRow.jsx",
+    "Components/ProductTable.jsx"
   ],
   "exclude": [
     "node_modules"

@@ -2,10 +2,10 @@ import React from 'react';
 
 const ProductCategoryRow = ({ category }) => {
     return (
-        <div>
+        <div className='my-4'>
             <tr>
-                <th colSpan='2'>
-                    {/* {category} */}
+                <th className='text-xl'>
+                    {category}
                 </th>
             </tr>
         </div>
