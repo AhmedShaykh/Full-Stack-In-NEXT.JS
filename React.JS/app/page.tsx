@@ -1,4 +1,3 @@
-import React from 'react';
 import { PRODUCTS } from "../Components/products";
 import FilterableProductTable from '../Components/FilterableProductTable';
 
