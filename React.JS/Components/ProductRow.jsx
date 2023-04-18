@@ -8,7 +8,7 @@ const ProductRow = ({ product }) => {
         </span>;
 
     return (
-        <tr className='flex justify-between space-x-12 space-y-2 text-lg'>
+        <tr className='flex justify-between space-x-16 space-y-2 text-lg'>
             <td>{name}</td>
             <td>{product.price}</td>
         </tr>

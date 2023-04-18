@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import React, { FC, useState } from 'react';
 import ProductTable from './ProductTable';
 import SearchBar from './SearchBar';
@@ -41,6 +42,12 @@ const FilterableProductTable: FC<Props> = ({ products }) => {
                 filterText={filterText}
                 inStockOnly={inStockOnly}
             />
+
+            <div className='flex justify-center'>
+                <Link href='/reducer' className='text-[#29f3e7] text-2xl my-8'>
+                    Reducer
+                </Link>
+            </div>
         </div>
     )
 };
