@@ -7,7 +7,7 @@ const page: FC = () => {
     return (
         <div className={`${container}`}>
             <h1 className="flex-full text-center mb-6 font-bold text-4xl">What people are saying about my eBook</h1>
-            <div className={`flex flex-wrap justify-center content-center`}>
+            <div className={`flex flex-wrap justify-center content-end`}>
                 <div className="testimonial max-w-sm m-4 p-7 bg-white rounded-xl">
                     <p>"Just ordered my copy! Shruti is awesome and I suck at grid.<br />No brainer."</p>
                     <span><strong>- Caleb Porzio</strong></span>
