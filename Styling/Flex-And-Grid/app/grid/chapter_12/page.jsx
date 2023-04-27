@@ -32,7 +32,7 @@ const page = () => {
                         className="w-full h-full col-start-1 col-end-2 row-start-1 row-end-2"
                         src="https://picsum.photos/600/400"
                     />
-                    <figcaption className="col-start-1 col-end-2 row-start-1 row-end-2 self-end bg-gray-800 bg-opacity-60 text-white p-4">This is a long caption flowing into two lines or more.</figcaption>
+                    <figcaption className="col-start-1 col-end-2 row-start-1 row-end-2 self-center bg-gray-800 bg-opacity-60 text-white p-4">This is a long caption flowing into two lines or more.</figcaption>
                 </figure>
             </div>
         </div>

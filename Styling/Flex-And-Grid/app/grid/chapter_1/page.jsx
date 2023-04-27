@@ -30,7 +30,7 @@ const page = () => {
                         <li className="h-1 my-10 bg-white bg-opacity-50"></li>
                     </ol>
                 </div>
-                <div className="p-10">
+                <div className="p-10 bg-slate-400">
                     <h1 className="font-bold text-4xl">Main Content</h1>
                     <p className="h-1 my-10 bg-black bg-opacity-10"></p>
                     <p className="h-1 my-10 bg-black bg-opacity-10"></p>
@@ -44,7 +44,7 @@ const page = () => {
             <div className="w-[70%] m-16 p-8 bg-white grid grid-cols-[1fr,auto]">
                 <div className="pb-5">
                     <h3 className="font-bold text-xl">Veg Burger</h3>
-                    <p className="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit atque hic eligendi</p>
+                    <p className="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit atque hic eligendi.</p>
                 </div>
                 <span className="text-5xl pl-4"> 🍔 </span>
                 <div className="pb-5">

@@ -35,7 +35,7 @@ const Home: FC = () => {
                     </button>
                 ) : (
                     <button
-                        className="bg-white rounded-md border-purple-400 border-2 p-4"
+                        className="bg-white rounded-md border-black border-2 p-4"
                         onClick={() => setTheme('dark')}
                     >
                         <BsFillSunFill />
@@ -47,7 +47,7 @@ const Home: FC = () => {
             <Image />
 
             <div className="mt-8 flex justify-center">
-                <button className="m-4 p-4 rounded-2xl border-8 border-cyan-500 ring-2">
+                <button className="m-4 p-4 rounded-2xl border-8 border-cyan-500 ring-4">
                     Ring
                 </button>
                 <button

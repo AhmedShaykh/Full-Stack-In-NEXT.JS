@@ -7,7 +7,7 @@ const Home: FC = () => {
         <main className='py-4 px-2 bg-black h-full'>
             <div className='flex justify-center text-white'>
                 <h1 className='text-5xl font-semibold'>
-                    Flex & Grid In Tailwind CSS
+                    FlexBox & Grid System In Tailwind CSS
                 </h1>
             </div>
 

@@ -1,7 +1,6 @@
-import React, { FC } from 'react';
 import Link from 'next/link';
 
-const Flex: FC = () => {
+const Flex = () => {
     return (
         <div className="text-white">
             <h1 className='text-4xl font-semibold py-4'>

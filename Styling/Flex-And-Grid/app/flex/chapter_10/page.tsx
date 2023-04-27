@@ -15,7 +15,7 @@ const page: FC = () => {
                 <div className='flex-1'>
                     <img className="inline h-7" src="https://res.cloudinary.com/thirus/image/upload/v1628614672/logos/circleai_dm9slt.png" alt="" />
                 </div>
-                <ul className={`${ul} order-last flex-[100%] mt-4 md:order-none md:flex-auto md:mt-0`}>
+                <ul className={`${ul} order-last flex-[100%] md:order-none md:flex-auto md:mt-0`}>
                     <li className={`${list}`}>
                         <a href="#">Home</a>
                     </li>
@@ -26,7 +26,7 @@ const page: FC = () => {
                         <a href="#">Pricing</a>
                     </li>
                 </ul>
-                <span className="flex-1 text-right">
+                <span className="flex-1 flex-shrink-0 text-right">
                     <a href="#" className={`${btn}`}>Join us</a>
                 </span>
             </header>
