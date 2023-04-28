@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Link from 'next/link';
 import TodosList from './TodosList';
 
@@ -11,8 +11,16 @@ const Todos = () => {
                 </p>
             </Link>
 
-            {/* @ts-ignore*/}
-            <TodosList />
+            <Suspense
+                fallback={
+                    <h2 className="text-lg">
+                        Loading Todos...
+                    </h2>
+                }
+            >
+                {/* @ts-ignore*/}
+                <TodosList />
+            </Suspense>
         </div>
     )
 };
