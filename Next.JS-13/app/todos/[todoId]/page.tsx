@@ -1,8 +1,7 @@
-"use client";
 import React from 'react';
 import Link from 'next/link';
 import { Todo } from '@/Typings';
-import NotFound from './notfound';
+import { notFound } from "next/navigation";
 
 export const dynamicParams = true;
 
@@ -22,24 +21,11 @@ const fetchTodo = async (todoId: string) => {
     return todo;
 };
 
-export async function generateStaticParams() {
-
-    const res = await fetch("https://jsonplaceholder.typicode.com/todos");
-
-    const todos: Todo[] = await res.json();
-
-    const trimmedTodos = todos.splice(0, 10);
-
-    return trimmedTodos.map(todo => ({
-        todoId: todo.id.toString()
-    }));
-};
-
 const TodoPage = async ({ params: { todoId } }: Props) => {
 
     const todo = await fetchTodo(todoId);
 
-    if (!todo.id) return NotFound;
+    if (!todo.id) return notFound();
 
     return (
         <div className="text-center py-4">
@@ -65,3 +51,16 @@ const TodoPage = async ({ params: { todoId } }: Props) => {
 };
 
 export default TodoPage;
+
+export async function generateStaticParams() {
+
+    const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+
+    const todos: Todo[] = await res.json();
+
+    const trimmedTodos = todos.splice(0, 10);
+
+    return trimmedTodos.map(todo => ({
+        todoId: todo.id.toString()
+    }));
+};
