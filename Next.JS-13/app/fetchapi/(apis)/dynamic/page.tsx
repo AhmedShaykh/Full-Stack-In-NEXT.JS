@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from '../page.module.css';
 
 async function getData() {
 
@@ -23,20 +22,20 @@ const Dynamic = async () => {
     const quote = await getData();
 
     return (
-        <div className={styles.main}>
-            <h3>Data Server Dynamic</h3>
+        <div className="flex flex-col items-center">
+            <h3 className="text-4xl my-6 font-bold">Data Server Dynamic</h3>
 
-            <div className={styles.contentDiv}>
-                <h2 className={styles.content}>Content:</h2>
-                <p className={styles.para}>
+            <div className="flex flex-col items-center py-6 mt-4 max-w-4xl">
+                <h2 className="text-3xl font-semibold py-2">Content:</h2>
+
+                <p className="text-2xl text-center">
                     {quote.content}
                 </p>
             </div>
 
-            <Link href="/">
+            <Link href="/fetchapi">
                 <p
-                    style={{ marginTop: "1.5rem" }}
-                    className={styles.link}
+                    className="text-2xl font-semibold text-blue-700 mt-6"
                 >
                     Back To Home
                 </p>

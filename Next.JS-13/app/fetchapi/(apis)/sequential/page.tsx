@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from '../page.module.css';
 
 type Book = {
     id: number;
@@ -44,33 +43,31 @@ const Sequential = async () => {
     const nonFictionBooks = await getNonFiction();
 
     return (
-        <div className={styles.main}>
-            <h3>Data Sequential Pattern</h3>
+        <div className="flex flex-col items-center">
+            <h3 className="text-4xl my-6 font-bold">Data Sequential Pattern</h3>
 
-            <div className={styles.contentDiv}>
-                <h3 className={styles.content}>Fiction Books:</h3>
+            <div className="my-6 flex flex-col items-center">
+                <h3 className="text-[2rem] font-bold py-1">Fiction Books:</h3>
                 {fictionBooks.map((book: Book) => (
-                    <p key={book.id} className={styles.para} style={{ padding: "0.5rem 0" }}>
+                    <p key={book.id} className="text-2xl my-1">
                         {book.name}
                     </p>
                 ))}
-
                 <br />
 
-                <h3 className={styles.content}>Non Fiction Books:</h3>
+                <h3 className="text-[2rem] font-bold py-1">Non Fiction Books:</h3>
                 <ul>
                     {nonFictionBooks.map((book: Book) => (
-                        <p key={book.id} className={styles.para} style={{ padding: "0.5rem 0" }}>
+                        <p key={book.id} className="text-2xl my-1">
                             {book.name}
                         </p>
                     ))}
                 </ul>
             </div>
 
-            <Link href="/">
+            <Link href="/fetchapi">
                 <p
-                    style={{ margin: "1.5rem 0" }}
-                    className={styles.link}
+                    className="text-2xl font-semibold text-blue-700 mt-6"
                 >
                     Back To Home
                 </p>
