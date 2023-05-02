@@ -1,7 +1,7 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Contentful Headless CMS',
+  title: 'Contentful With NEXT.JS!',
   description: 'Contentful Headless CMS With NEXT.JS 13',
 };
 

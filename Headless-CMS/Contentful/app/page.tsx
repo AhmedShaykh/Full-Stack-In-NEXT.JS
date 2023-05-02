@@ -1,9 +1,8 @@
 import React from 'react';
-import style from './page.module.css';
 
 const page = () => {
     return (
-        <div className={style.main}>
+        <div>
             <h1>Contentful Headless CMS With NEXT.JS 13</h1>
         </div>
     )
