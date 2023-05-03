@@ -1,1 +1,1 @@
-# Headless CMS!
+# Learning Headless CMS!
