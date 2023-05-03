@@ -1,10 +1,9 @@
 import React from 'react';
-import style from './page.module.css';
 
 const page = () => {
     return (
-        <div className={style.main}>
-            <h1>Sanity Headless CMS With NEXT.JS 13</h1>
+        <div className="flex flex-col items-center py-2">
+            <h1 className="text-4xl font-bold">Sanity Headless CMS With NEXT.JS 13</h1>
         </div>
     )
 };
