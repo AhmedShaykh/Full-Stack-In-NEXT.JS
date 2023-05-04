@@ -1,1 +1,0 @@
-# Contentful With NEXT.JS!
