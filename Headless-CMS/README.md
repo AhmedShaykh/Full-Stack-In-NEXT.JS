@@ -1,1 +1,1 @@
-# Sanity With NEXT.JS 13!
+# Headless CMS!
