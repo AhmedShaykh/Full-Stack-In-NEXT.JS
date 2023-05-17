@@ -1,1 +1,1 @@
-# Headless CMS!
+# Sanity Headless CMS!
