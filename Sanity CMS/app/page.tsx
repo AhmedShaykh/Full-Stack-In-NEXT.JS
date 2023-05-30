@@ -4,22 +4,33 @@ import { client } from '@/lib/sanityClient';
 export const getProductData = async () => {
 
     const res = await client.fetch(`
-    *[_type=="product" && _id=="469d9bab-a5db-4c4b-9369-82416e75232f"][0]
+    *[_type=="product"]{ title, description }
     `);
 
     return res;
 };
 
-async function Home() {
+interface IProduct {
+    title: string;
+    description: string;
+};
 
-    const data = await getProductData();
-    console.log(data);
+const Home = async () => {
+
+    const data: IProduct[] = await getProductData();
 
     return (
-        <div className="flex justify-center py-4">
-            <h1 className="text-4xl font-bold">
-                Sanity.io Headless CMS
-            </h1>
+        <div className="py-4">
+            {data.map((item, i) => (
+                <div key={i} className="my-8 flex flex-col items-center">
+                    <h1 className="text-4xl font-bold">
+                        {item.title}
+                    </h1>
+                    <p className="mt-3 text-xl">
+                        {item.description}
+                    </p>
+                </div>
+            ))}
         </div>
     )
 };
