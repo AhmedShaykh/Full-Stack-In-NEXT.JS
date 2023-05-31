@@ -1,6 +1,7 @@
 import React from 'react';
 import { client } from '@/lib/sanityClient';
-import Image from 'next/image';
+// import urlFor from "@/lib/urlFor";
+// import Image from "next/image";
 
 export const getProductData = async () => {
 
@@ -31,6 +32,15 @@ const Home = async () => {
                     <p className="mt-3 text-xl">
                         {item.description}
                     </p>
+                    {/* {item.image.map((img: any) => (
+                        <>
+                            <Image
+                                src={urlFor(img.asset).url()}
+                                alt="..."
+                                fill
+                            />
+                        </>
+                    ))} */}
                 </div>
             ))}
         </div>
