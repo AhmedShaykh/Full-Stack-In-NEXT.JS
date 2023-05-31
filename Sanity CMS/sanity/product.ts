@@ -16,7 +16,12 @@ export const product = {
         {
             name: "image",
             title: "Product Image",
-            type: "image"
+            type: "array",
+            of: [{
+                name: "img",
+                title: "Image",
+                type: "image"
+            }]
         }
     ]
 };
