@@ -18,7 +18,6 @@ export const getProductData = async () => {
     `);
 
     return res;
-
 };
 
 interface IProduct {
@@ -37,8 +36,9 @@ const Home = async () => {
 
     return (
         <div className="my-8 grid grid-cols-[repeat(2,auto)] justify-center gap-x-10">
-            {data.map(item => (
+            {data.map((item, i) => (
                 <ProductCart
+                    index={i}
                     id={item._id}
                     image={item.image}
                     title={item.title}

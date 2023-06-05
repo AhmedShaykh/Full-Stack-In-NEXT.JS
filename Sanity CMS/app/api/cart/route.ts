@@ -28,19 +28,19 @@ export const POST = async (request: NextRequest) => {
 
     const setCookies = cookies();
 
-    if (!cookies().has("user_id")) {
-
+    // if (!user_id) {
         setCookies.set("user_id", uid);
+    // }
 
-    }
+    const user_id = cookies().get("user_id")?.value as string;
 
     try {
 
         const res = await db.insert(cartTable).values({
             product_id: req.product_id,
             quantity: 1,
-            user_id: cookies().get("user_id") as string
-        });
+            user_id: user_id
+        }).returning();
 
         return NextResponse.json({ res });
 
