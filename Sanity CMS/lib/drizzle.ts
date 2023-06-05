@@ -8,7 +8,7 @@ import { drizzle } from "drizzle-orm/vercel-postgres";
 import { InferModel } from "drizzle-orm";
 import { sql } from "@vercel/postgres";
 
-const cartTable = pgTable("cart", {
+export const cartTable = pgTable("cart", {
     id: serial("id").primaryKey(),
     user_id: varchar("user_id", {
         length: 255
