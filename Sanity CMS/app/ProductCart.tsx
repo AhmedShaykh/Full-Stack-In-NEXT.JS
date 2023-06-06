@@ -10,9 +10,10 @@ interface Props {
     image: IImage;
     id: string;
     price: number;
+    category: string;
 };
 
-const ProductCart: FC<Props> = ({ index, id, image, title, price }) => {
+const ProductCart: FC<Props> = ({ index, id, image, title, price, category }) => {
 
     const handleAddToCart = async () => {
 
@@ -48,6 +49,16 @@ const ProductCart: FC<Props> = ({ index, id, image, title, price }) => {
             <h3 className="text-lg my-1 font-bold">
                 $ {price}
             </h3>
+
+            <div className="flex flex-col">
+                <h3 className="uppercase text-gray-400 font-bold text-lg">
+                    Category:
+                </h3>
+
+                <h3 className="font-bold text-lg">
+                    {category}
+                </h3>
+            </div>
 
             <button
                 className="my-2 py-2 px-6 rounded bg-blue-700 text-white font-semibold"

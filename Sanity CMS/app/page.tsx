@@ -18,6 +18,7 @@ export const getProductData = async () => {
     `);
 
     return res;
+
 };
 
 interface IProduct {
@@ -43,6 +44,7 @@ const Home = async () => {
                     image={item.image}
                     title={item.title}
                     price={item.price}
+                    category={item.category.name}
                 />
             ))}
         </div>
