@@ -8,8 +8,7 @@ export const getProductData = async () => {
     const res = await client.fetch(`
     *[_type=="product"] {
         title,
-        image, 
-        _id,
+        image,
         price,
         category -> {
           name
@@ -18,13 +17,11 @@ export const getProductData = async () => {
     `);
 
     return res;
-
 };
 
 interface IProduct {
     title: string;
     image: IImage;
-    _id: string;
     price: number;
     category: {
         name: string;
@@ -40,7 +37,6 @@ const Home = async () => {
             {data.map((item, i) => (
                 <ProductCart
                     index={i}
-                    id={item._id}
                     image={item.image}
                     title={item.title}
                     price={item.price}
