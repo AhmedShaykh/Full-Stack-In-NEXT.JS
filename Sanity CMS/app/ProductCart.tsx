@@ -1,7 +1,9 @@
+"use client";
 import React, { FC } from 'react';
 import { urlForImage } from '@/sanity/lib/image';
 import Image from "next/image";
 import { Image as IImage } from 'sanity';
+import toast, { Toaster } from 'react-hot-toast';
 
 interface Props {
     index: number;
@@ -10,6 +12,8 @@ interface Props {
     price: number;
     category: string;
 };
+
+const notify = () => toast.success("Add New Product");
 
 const ProductCart: FC<Props> = ({ index, image, title, price, category }) => {
     return (
@@ -45,9 +49,12 @@ const ProductCart: FC<Props> = ({ index, image, title, price, category }) => {
 
             <button
                 className="my-2 py-2 px-6 rounded bg-blue-700 text-white font-semibold"
+                onClick={notify}
             >
                 Add To Cart
             </button>
+
+            <Toaster />
         </div>
     )
 };
