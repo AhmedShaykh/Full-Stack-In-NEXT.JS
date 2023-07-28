@@ -20,7 +20,7 @@ const page: FC = () => {
                             It is an Indian restaurant close to the Eiffel Tower. Enjoy delicious Indian traditional food and South Asian food.
                         </p>
                     </div>
-                    <span className="flex-shrink-0 span">1:00 PM</span>
+                    <span className="flex-shrink-1 span">1:00 PM</span>
                 </div>
             </div>
 

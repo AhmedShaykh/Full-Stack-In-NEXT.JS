@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 const container = `max-w-none w-72 my-8 mx-auto`;
 
-const btn = `mt-2 bg-cyan-600 text-white py-2 px-4 rounded-md text-sm`;
+const btn = `mt-4 bg-cyan-600 text-white py-2 px-4 rounded-md text-sm`;
 
 const page: FC = () => {
     return (
@@ -26,7 +26,7 @@ const page: FC = () => {
                         <p className="text-2xl font-bold">Richard Carl</p>
                         <span className="text-sm opacity-90">Graphic Designer</span>
                     </div>
-                    <div className="rating ml-auto self-start">
+                    <div className="rating ml-auto self-center">
                         <span>5.0</span>
                     </div>
                 </div>

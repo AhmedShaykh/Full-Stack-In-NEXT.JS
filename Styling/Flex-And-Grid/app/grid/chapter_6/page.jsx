@@ -15,7 +15,7 @@ const page = () => {
             </div>
 
             <div className='py-8 flex justify-center'>
-                <div className="w-80 bg-white m-8 p-8 rounded-md h-96 grid content-between justify-items-center text-center">
+                <div className="w-80 bg-white m-8 p-8 rounded-md h-96 grid content-between justify-items-end text-center">
                     <img className="w-20 h-20 object-cover rounded-full" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=80" alt="" />
                     <p><strong>Matt Cooper</strong> is a graphic designer at CircleAi. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <a href="#" className="font-bold text-teal-700">View Profile</a>
