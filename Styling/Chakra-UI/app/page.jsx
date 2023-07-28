@@ -21,7 +21,7 @@ const Home = () => {
             <Heading
                 fontWeight="bold"
             >
-                Next.JS 13 With Chakra UI
+                Next.JS With Chakra UI
             </Heading>
 
             <Box>
