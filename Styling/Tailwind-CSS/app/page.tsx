@@ -1,21 +1,12 @@
 "use client";
-import { FC, useEffect, useState } from 'react';
 import Button from './button';
 import Image from './image';
 import { useTheme } from 'next-themes';
 import { BsMoonFill, BsFillSunFill } from 'react-icons/bs';
 
-const Home: FC = () => {
+const Home = () => {
 
     const { systemTheme, theme, setTheme } = useTheme();
-
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-
-    if (!mounted) return null;
 
     const currentTheme = theme === 'system' ? systemTheme : theme;
 
@@ -23,7 +14,7 @@ const Home: FC = () => {
         <main className='py-4 px-2'>
             <div className='flex justify-around'>
                 <h1 className='text-4xl font-semibold'>
-                    Next.JS 13 With Tailwind CSS
+                    Next.JS With Tailwind CSS
                 </h1>
 
                 {currentTheme === 'dark' ? (
@@ -44,6 +35,7 @@ const Home: FC = () => {
             </div>
 
             <Button btn="Go To Next Page" />
+
             <Image />
 
             <div className="mt-8 flex justify-center">

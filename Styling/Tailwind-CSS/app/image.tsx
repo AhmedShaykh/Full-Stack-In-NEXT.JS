@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const image: FC = () => {
     return (
-        <div className='mt-20 flex justify-center'>
+        <div className='mt-16 mb-16 flex justify-center'>
             <Image
                 src="/SOL.svg"
                 alt="SOLANA"
