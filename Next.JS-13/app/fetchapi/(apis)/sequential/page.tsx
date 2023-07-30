@@ -49,16 +49,17 @@ const Sequential = async () => {
             <div className="my-6 flex flex-col items-center">
                 <h3 className="text-[2rem] font-bold py-1">Fiction Books:</h3>
                 {fictionBooks.map((book: Book) => (
-                    <p key={book.id} className="text-2xl my-1">
+                    <p key={book.id} className="text-2xl py-2">
                         {book.name}
                     </p>
                 ))}
+
                 <br />
 
                 <h3 className="text-[2rem] font-bold py-1">Non Fiction Books:</h3>
                 <ul>
                     {nonFictionBooks.map((book: Book) => (
-                        <p key={book.id} className="text-2xl my-1">
+                        <p key={book.id} className="text-2xl py-2">
                             {book.name}
                         </p>
                     ))}
@@ -67,7 +68,7 @@ const Sequential = async () => {
 
             <Link href="/fetchapi">
                 <p
-                    className="text-2xl font-semibold text-blue-700 mt-6"
+                    className="text-2xl font-semibold text-blue-700 my-4"
                 >
                     Back To Home
                 </p>

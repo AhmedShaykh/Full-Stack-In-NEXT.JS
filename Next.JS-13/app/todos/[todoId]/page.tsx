@@ -1,4 +1,3 @@
-import React from 'react';
 import Link from 'next/link';
 import { Todo } from '@/Typings';
 import { notFound } from "next/navigation";
@@ -18,6 +17,7 @@ const fetchTodo = async (todoId: string) => {
     );
 
     const todo: Todo = await res.json();
+
     return todo;
 };
 

@@ -10,9 +10,9 @@ const Client = () => {
 
     const { data, error, isLoading } = useSWR(url, fetcher);
 
-    if (error) return <div className="">Failed to Load</div>
+    if (error) return <div className="text-4xl my-6 font-bold">Failed to Load</div>
 
-    if (isLoading) return <div className="">Loading...</div>
+    if (isLoading) return <div className="text-4xl my-6 font-bold">Loading...</div>
 
     return (
         <div className="flex flex-col items-center">
